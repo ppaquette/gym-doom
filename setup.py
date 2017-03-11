@@ -17,5 +17,5 @@ setup(name='{}-{}'.format(USERNAME, 'gym-doom'),
     packages=[package for package in find_packages() if package.startswith(USERNAME)],
     package_data={ '{}_{}'.format(USERNAME, 'gym_doom'): ['assets/*.cfg' ] },
     zip_safe=False,
-    install_requires=[ 'gym>=0.4.10', 'doom_py>=0.0.11' ],
+    install_requires=[ 'gym>=0.8.0', 'doom_py>=0.0.11' ],
 )

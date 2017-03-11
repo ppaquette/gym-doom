@@ -18,7 +18,7 @@ from .doom_deathmatch import DoomDeathmatchEnv
 register(
     id='{}/meta-Doom-v0'.format(USERNAME),
     entry_point='{}_gym_doom:MetaDoomEnv'.format(USERNAME),
-    timestep_limit=999999,
+    max_episode_steps=999999,
     reward_threshold=9000.0,
     kwargs={
         'average_over': 3,
@@ -30,63 +30,63 @@ register(
 register(
     id='{}/DoomBasic-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomBasicEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=10.0,
 )
 
 register(
     id='{}/DoomCorridor-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomCorridorEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=1000.0,
 )
 
 register(
     id='{}/DoomDefendCenter-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomDefendCenterEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=10.0,
 )
 
 register(
     id='{}/DoomDefendLine-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomDefendLineEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=15.0,
 )
 
 register(
     id='{}/DoomHealthGathering-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomHealthGatheringEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=1000.0,
 )
 
 register(
     id='{}/DoomMyWayHome-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomMyWayHomeEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=0.5,
 )
 
 register(
     id='{}/DoomPredictPosition-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomPredictPositionEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=0.5,
 )
 
 register(
     id='{}/DoomTakeCover-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomTakeCoverEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=750.0,
 )
 
 register(
     id='{}/DoomDeathmatch-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomDeathmatchEnv'.format(USERNAME),
-    timestep_limit=10000,
+    max_episode_steps=10000,
     reward_threshold=20.0,
 )
 
