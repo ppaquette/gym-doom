@@ -1,4 +1,5 @@
 import gym
+from multi_discrete import BoxToMultiDiscrete, DiscreteToMultiDiscrete
 
 # Constants
 NUM_ACTIONS = 43
@@ -58,7 +59,7 @@ def ToDiscrete(config):
                 allowed_actions = None
             else:
                 raise gym.error.Error('Invalid configuration. Valid options are "minimal", "constant-7", "constant-17", "full"')
-            self.action_space = gym.spaces.multi_discrete.DiscreteToMultiDiscrete(self.action_space, allowed_actions)
+            self.action_space = DiscreteToMultiDiscrete(self.action_space, allowed_actions)
         def _step(self, action):
             return self.env._step(self.action_space(action))
 
@@ -106,7 +107,7 @@ def ToBox(config):
                 allowed_actions = None
             else:
                 raise gym.error.Error('Invalid configuration. Valid options are "minimal", "constant-7", "constant-17", "full"')
-            self.action_space = gym.spaces.multi_discrete.BoxToMultiDiscrete(self.action_space, allowed_actions)
+            self.action_space = BoxToMultiDiscrete(self.action_space, allowed_actions)
         def _step(self, action):
             return self.env._step(self.action_space(action))
 

@@ -1,5 +1,7 @@
 # gym-doom
 #### **Gym Doom is an environment bundle for OpenAI Gym**
+Note: This environment is not maintained anymore, and uses an old version of VizDoom.
+
 ---
 <div id="installation"></div>Installation
 ============
