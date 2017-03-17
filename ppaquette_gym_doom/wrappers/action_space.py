@@ -1,5 +1,5 @@
 import gym
-from multi_discrete import BoxToMultiDiscrete, DiscreteToMultiDiscrete
+from .multi_discrete import BoxToMultiDiscrete, DiscreteToMultiDiscrete
 
 # Constants
 NUM_ACTIONS = 43
